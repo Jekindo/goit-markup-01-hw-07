@@ -25,10 +25,10 @@
                     <ul class="site-nav__list list">
                         <li class="site-nav__item">
                             <a
-                                href="./index.html"
-                                class="site-nav__link site-nav__link--active link"
-                                >Студия</a
-                            >
+                                href="./main.html"
+                                class="site-nav__link site-nav__link--active link">
+								Студия
+							</a>
                         </li>
                         <li class="site-nav__item">
                             <a href="./portfolio.html" class="site-nav__link link">Портфолио</a>
@@ -405,17 +405,21 @@
             <div class="container page-footer__row">
                 <!-- Contacts -->
                 <div class="page-footer__contacts">
-                    <a href="#" class="logo logo--light page-footer__logo"><span>Web</span>Studio</a>
+                    <a href="#" class="logo logo--light page-footer__logo"
+                        ><span>Web</span>Studio</a
+                    >
                     <ul class="address-list list">
                         <li class="address-list__item">
-							<span class="address-list__dislocation">г. Киев, пр-т Леси Украинки, 26</span>
-						</li>
+                            <span class="address-list__dislocation"
+                                >г. Киев, пр-т Леси Украинки, 26</span
+                            >
+                        </li>
                         <li class="address-list__item">
                             <a
                                 href="mailto:info@example.com"
                                 class="contact-link page-footer__contact-link link">
-								info@example.com
-							</a>
+                                info@example.com
+                            </a>
                         </li>
                         <li class="address-list__item">
                             <a
@@ -432,31 +436,46 @@
                     <b class="action footer__action">присоединяйтесь</b>
                     <ul class="social-list list">
                         <li class="social-list__item">
-                            <a href="" class="social-list__link social-list__link--gray-bg" aria-label="Instagram">
-                                <svg class="social-list__icon  social-list__icon--white ">
-                                    <use href="./images/icons/svg-sprite-optimized.svg#icon-instagram"></use>
+                            <a
+                                href=""
+                                class="social-list__link social-list__link--gray-bg"
+                                aria-label="Instagram">
+                                <svg class="social-list__icon social-list__icon--white">
+                                    <use
+                                        href="./images/icons/svg-sprite-optimized.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-list__item">
-                            <a href="" class="social-list__link social-list__link--gray-bg" aria-label="Twitter">
-                                <svg class="social-list__icon  social-list__icon--white ">
+                            <a
+                                href=""
+                                class="social-list__link social-list__link--gray-bg"
+                                aria-label="Twitter">
+                                <svg class="social-list__icon social-list__icon--white">
                                     <use
                                         href="./images/icons/svg-sprite-optimized.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-list__item">
-                            <a href="" class="social-list__link  social-list__link--gray-bg" aria-label="Facebook">
-                                <svg class="social-list__icon social-list__icon--white ">
-                                    <use href="./images/icons/svg-sprite-optimized.svg#icon-facebook"></use>
+                            <a
+                                href=""
+                                class="social-list__link social-list__link--gray-bg"
+                                aria-label="Facebook">
+                                <svg class="social-list__icon social-list__icon--white">
+                                    <use
+                                        href="./images/icons/svg-sprite-optimized.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-list__item">
-                            <a href="" class="social-list__link   social-list__link--gray-bg" aria-label="Linkedin">
+                            <a
+                                href=""
+                                class="social-list__link social-list__link--gray-bg"
+                                aria-label="Linkedin">
                                 <svg class="social-list__icon social-list__icon--white">
-                                    <use href="./images/icons/svg-sprite-optimized.svg#icon-linkedin"></use>
+                                    <use
+                                        href="./images/icons/svg-sprite-optimized.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
                         </li>
@@ -471,7 +490,7 @@
                         aria-labelledby="newsletter-group-title">
                         <b class="action footer__action" id="newsletter-group-title">
                             Подпишитесь на рассылку
-						</b>
+                        </b>
                         <!-- Email -->
                         <input
                             class="newsletter-form__input"
@@ -550,12 +569,12 @@
                             maxlength="600"></textarea>
                     </label>
                     <!-- Условия договора -->
-                    <label class="policy">
-                        <input class="policy__checkbox" type="checkbox" name="policy" required />
-                        <svg class="policy__icon">
+                    <label class="form-policy">
+                        <input class="form-policy__checkbox" type="checkbox" name="policy" required />
+                        <svg class="form-policy__icon">
                             <use href="./images/icons/svg-sprite-optimized.svg#icon-check"></use>
                         </svg>
-                        <span class="policy__label">
+                        <span class="form-policy__label">
                             Соглашаюсь с рассылкой и принимаю
                             <a href="" class="policy__link">Условия договора</a>
                         </span>
@@ -567,16 +586,6 @@
         </div>
 
         <script src="./js/modal.js"></script>
-        <script>
-            console.log(
-                document.querySelector(".page-header--fixed").getBoundingClientRect().height
-            );
-
-            const { height: HeaderHeight } = document
-                .querySelector(".page-header--fixed")
-                .getBoundingClientRect();
-
-            document.body.style.paddingTop = `${HeaderHeight}px`;
-        </script>
+		<script src="./js/header-fixed.js"></script>
     </body>
 </html>
