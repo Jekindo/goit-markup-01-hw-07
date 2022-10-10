@@ -82,10 +82,6 @@ img {
     padding-bottom: 94px;
 }
 
-.section--no-pading-top {
-	padding-top: 0;
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -128,48 +124,11 @@ img {
 
 
 /*? LOGO */
-.logo {
-	display: inline-block;
-	
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-}
 
-.logo--dark {
-	color: var(--primary-black-color);
-}
 
-.logo--light {
-	color: var(--primary-white-color);
-}
-
-.site-nav__logo {
-	margin-right: 93px;
-}
-
-.logo > span {
-    color: var(--accent-color);
-}
 
 /*! Site-nav */
 
-.site-nav {
-	display: flex;
-	align-items: center;
-}
-
-.site-nav__list {
-    display: flex;
-    align-items: center;
-}
-
-.site-nav__item:not(:last-child),
-.contacts-list__item:not(:last-child) {
-    margin-right: 50px;
-}
 
 .site-nav__link {
     position: relative;
@@ -383,17 +342,9 @@ img {
 	flex-basis: calc((100% - 2 * var(--card-set-gap)) / 3);
 }
 
-/*? section */
-.section-title {
-    color: var(--title-text-color);
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-}
 
 /*? Особенности */
+
 .peculiarities__card {
     flex-basis: calc((100% - 3 * var(--card-set-gap)) / 4);
 }
@@ -680,32 +631,6 @@ img {
 	margin-bottom: 20px;
 }
 
-.footer-social-list {
-    display: flex;
-}
-
-.footer-social-list > .item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.footer-social-list .social-link {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--primary-white-color);
-    border-radius: 50%;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-
-    transition: background-color 250ms var(--timing-function);
-}
-
-.footer-social-list .social-link:hover,
-.footer-social-list .social-link:focus {
-    background-color: var(--accent-color);
-}
 
 /* Newsletter */
 

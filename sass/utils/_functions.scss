@@ -2,10 +2,6 @@
 	@return map-get($colors, $key)
 };
 
-@function GetShadow($key) {
-	@return map-get($shadows, $key)
-};
-
-@function GetTransition($key) {
+@function getTransition($key) {
 	@return map-get($transition, $key)
 };
